@@ -1,0 +1,116 @@
+@import 'Variables';
+@import 'Global';
+$footer-body:#696969;
+.footer-area{
+    background-color: $secondary-color;
+    
+    color: $footer-body;
+    .footer-wrapper{
+        padding: 65px 0;
+        border-bottom: 1px solid #494949;
+    }
+    .footer-bottom{
+        overflow: hidden;
+        padding: 30px 60px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.footer-widget{
+    .footer-contact{
+        .social-icon{
+            display: inline-block;
+            margin-top: 20px;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+               
+                a{
+                    
+                    text-align: center;
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    display: block;
+                    background-color: #1b2334;
+                    border-radius: 50%; 
+                    color: #fff;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        background-color: $primary-color;
+                    }                   
+                }
+            }
+        }
+    }
+    .footer-menu{
+        
+        .footer-menu-list{
+            margin-left: -15px;
+            margin-right: -15px;
+            display: flex;
+            flex-wrap: wrap;
+            >li{
+                margin-bottom: 10px;
+                padding-left: 30px;
+                transition: all 0.3s linear;
+                padding-right: 15px;
+                flex: 0 0 50%;
+                max-width: 50%;
+                position: relative;
+                &:hover{
+                    padding-left: 40px;
+
+                }
+                &:hover::before{
+                    left: 20px;
+                }
+                &::before{
+                    content: '\f04b';
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 0px;
+                    left: 11px;
+                    transition: all 0.3s ease-in-out;
+                }
+                a{
+                    text-transform: capitalize;
+                    color:#969697;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        color: #fff;
+    }
+   .footer-blog{
+       .blog-sm-layout{
+           display: flex;
+           align-items: center;
+           .blog-content{
+               flex: 1;
+               .blog-title{
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: $footer-body;
+                    font-weight: 400;
+               }
+               
+           }
+           .blog-thumbnail{
+            margin-right: 20px;
+        }
+       }
+   }
+}

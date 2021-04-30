@@ -1,0 +1,49 @@
+@import 'Variables';
+@import 'Global';
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border: 1px solid #d6d3d2;
+    .header-wrap{
+        padding: 0 60px;
+    }
+}
+nav.main-menu{
+   
+    ul{
+        display: inline;
+        li{
+            display: inline-block;
+            margin-right: 35px;
+            a{
+                display: inline-block;
+                line-height: 1;
+                padding: 40px 0;
+                font-size: 14px;
+                font-family: Poppins;
+                font-weight: 600;
+                color: #343434;
+            }
+            &:last-child{
+                margin-right: 44px;
+            }
+        }
+    }
+}
+.hire-btn{
+    a{
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 600;
+        color: #343434;
+        display: inline-block;
+        padding: 18px 55px;
+        line-height: 1;
+        border: 1px solid #505cfd;
+        border-radius: 30px;
+    }
+    
+}
